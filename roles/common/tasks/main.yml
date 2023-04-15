@@ -1,0 +1,24 @@
+---
+# Installing common packages with one task
+# - name: install required packages using the apt module
+#   package:
+#     name:
+#       - python3
+#       - python3-openssl
+#       - python3-pip
+#       - python-pip
+#       - python-openssl
+#       - vim
+#     state: latest
+#   ignore_errors: True
+
+# - name: Install common utils using Pip
+#   pip:
+#     name: "{{ pip_packages }}"
+#     executable: pip3
+#   vars:
+#     pip_packages:
+#       - 'boto3'
+#       - 'awscli'
+#       - 'python-dateutil'
+#   ignore_errors: True
